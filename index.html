@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to my portfolio page</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="shortcut icon" href="profile.jpg" type="image/x-icon">
+    <style>
+        body{
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            display: flex;
+        }
+        .profile{
+              height: 100vh;
+              width: 40%;
+              background-color: lightcoral;
+              text-align: center;
+              /* background-image: url('profile.jpg'); */
+              background-position: center;
+              background-size: cover;
+              /* border: 2px solid rgb(255, 0, 0);s */
+              background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0,0.5)), url('profile.jpg');
+            }
+            .profile:hover{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0,1)), url('profile.jpg');
+                
+}
+.container{
+    width: 60%;
+    text-align: center;
+
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Tangerine', serif;
+    font-weight: 900;
+
+    /* border: 2px solid gold; */
+}
+.title{
+    font-size: 120px;
+}
+.btn{
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: none;
+    background-color: transparent;
+    border: 3px solid white;
+    margin-top: 100px;
+    visibility: hidden;
+}
+.btn:hover{
+    color: white;
+}
+.btn:active{
+    font-size: 22px;
+    border: none;
+}
+.contact-title{
+    text-align: center;
+    z-index: 123;
+    color: white;
+    font-size: 80px;
+    margin-top: 100px;
+    visibility: hidden;
+}
+.socials{
+    text-align: center;
+    /* border: 1px solid lightseagreen; */
+    margin-top: 70px;
+    visibility: hidden;
+}
+.socials p{
+    font-size: 35px;
+    color: darkslategray;
+}
+.socials p1{
+    color: white;
+}
+.connection{
+    margin-top: 10px;
+    border: 2px solid white;
+    font-size: 25px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.connection:hover{
+    border: none;
+}
+#carouselExample{
+    visibility: hidden;
+}
+.carousel-item{
+    /* border: 1px solid white; */
+    height: 430px;
+}
+@media (max-width: 1200px) {
+    .title {
+        font-size: 150px; /* Adjust font size for screens up to 1200px width */
+    }
+    .btn{
+        font-size: 50px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 128px; /* Adjust font size for screens up to 992px width (laptop size) */
+    }
+    .btn{
+        font-size: 40px;
+        height: 85px;
+    }
+    .contact-title{
+        font-size: 68px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 108px; /* Adjust font size for screens up to 768px width (tablet size) */
+    }
+    .btn{
+        margin-top: 120px;
+        font-size: 34px;
+        height: 77px;
+    }
+    .contact-title{
+        font-size: 57px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 40px; /* Adjust font size for screens up to 576px width (mobile size) */
+    }
+    .main{
+        display: block;
+    }
+    .profile{
+        width: 100vw;
+    }
+    .btn{
+        margin-top: 20px;
+        font-size: 28px;
+    }
+    .contact-title{
+        font-size: 40px;
+    }
+    .socials{
+        margin-top: 140px;
+    }
+}
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="profile" onmouseover="showme()" onmouseleave="hideme()">
+        <h1 class="contact-title" id="contact-title">Let's talk Magic</h1>
+        <div id="socials" class="socials">
+            <p1>Myself Mudar bohra, i create creative websites. "Passionate creator exploring the digital realm. Transforming ideas into immersive experiences. Bringing visions to life through design and code."</p1>
+            <p>Connect me</p>
+            <a href="http://" class="connection" id="connection1">Facebook</a>
+            <a href="http://" class="connection" id="connection2">Instagram</a>
+            <a href="http://" class="connection" id="connection3">Twitter</a>
+            <a href="http://" class="connection" id="connection4">Reddit</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1 id="texts" class="title text-lg text-xl-lg text-xxl-xl text-xxxl-xxl"> <em style="color: blueviolet;"></em></h1>
+        <button id="btn" class="btn" onclick="toggle()">EXPLORE MY WORK</button>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="website1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="website2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="website3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="website4.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</div>
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+var str="Web Wizardry by Mudar"
+var fin=str.split("")
+var ind=0
+var time=setInterval(() => {
+        document.getElementById('texts').innerHTML+=fin[ind]
+        ind++
+    if(ind==fin.length){
+        clearInterval(time)
+    }
+},200);
+setTimeout(() => {
+    document.getElementById('btn').style.visibility="visible"
+},6000);
+function showme(){
+    document.getElementById('contact-title').style.visibility="visible"
+    document.getElementById('socials').style.visibility='visible'
+}
+function hideme(){
+    document.getElementById('contact-title').style.visibility="hidden"
+    document.getElementById('socials').style.visibility='hidden'
+}
+function toggle(){
+    if(document.getElementById('btn').innerHTML=="EXPLORE MY WORK"){
+        document.getElementById('btn').innerHTML="Back"
+        document.getElementById('carouselExample').style.visibility="visible"
+    }
+    else if(document.getElementById('btn').innerHTML=="Back"){
+        document.getElementById('btn').innerHTML="EXPLORE MY WORK"
+        document.getElementById('carouselExample').style.visibility="hidden"
+    }
+}
+
+</script> 
+</body>
+</html>
